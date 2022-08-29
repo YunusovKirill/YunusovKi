@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg">
+  <title>Ковровый рай</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__menu flex">
+      <div class="container header__container flex row">
+        <div class="header__nav flex col-lg-2">
+          <button class="btn-reset close" aria-label="Кнопка закрытия навигации">
+            <span class="close__line"></span>
+            <span class="close__line"></span>
+          </button>
+          <nav>
+            <ul class="header__nav__items list-reset flex">
+              <li class="header__nav__item">
+                <a href="" class="header__link">Каталог</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="" class="header__link">Оплата и доставка</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="" class="header__link">О компании</a>
+              </li>
+              <li class="header__nav__item">
+                <a href="" class="header__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__info row col-lg-10">
+          <div class="col-lg-6">
+            <div class="header__info__item header__info__item-1 flex">
+              <a href="#" class="header__title__link"></a>
+              <p class="header__title__text">Как выбрать ковёр?</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="header__info__item header__info__item-2 flex">
+              <a href="#" class="header__title__link"></a>
+              <p class="header__title__text">Рекомендации по уходу</p>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container header__container flex">
+      <div class="header__right flex">
+        <button class="burger btn-reset" aria-label="Кнопка раскрытия навигации">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+        <a href="catalog.html" class="header__link">Каталог</a>
+      </div>
+      <a href="index.html" class="header__logo logo">
+        <picture>
+          <img src="img/logo.png" class="header__logo-img" alt="Логотип Коврового рая">
+        </picture>
+      </a>
+      <div class="header__right flex">
+        <a href="https://vk.com/kovray377" class="header__vk">
+          <svg height="62px" width="62px" style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <style type="text/css">
+              .st0{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+            </style>
+            <path class="st0" d="M137.547,232.778c60.681-5.55,104.493-60.302,97.096-116.939c-7.222-55.297-60.168-93.947-114.839-88.571  c-55.424,5.449-99.709,54.979-95.462,110.772c7.153,87.164,91.909,96.916,95.528,95.623"/><path class="st0" d="M100.607,102.304c-0.31-2.259,6.768-4.733,13.114-5.671c11.549-1.707,21.221,3.19,21.974,6.025  c0.753,2.836-0.797,30.834,3.899,31.19c4.696,0.355,18.165-29.949,21.266-32.608c3.101-2.658,31.544-1.861,31.544,1.063  s-24.145,30.879-24.101,35.443c0.044,4.563,28,28.398,25.519,31.899c-2.481,3.5-32.271,3.64-33.671,2.481  c-1.4-1.159-12.626-18.031-18.43-17.013c-5.804,1.019-1.817,16.746-3.544,18.785s-11.608,1.595-19.494,0.355  c-41.911-7.886-67.076-70.443-64.86-73.721c2.215-3.278,27.912-1.595,30.481,0.355s12.671,38.633,24.101,35.443  c3.057-1.462,1.772-26.228,1.772-26.228"/>
+          </svg>
+        </a>
+        <a href="tel:+79090607290" class="header__phone">
+          <svg height="62px" width="62px" style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <style type="text/css">
+              .st0{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+            </style>
+          <path class="st0" d="M228.649,174.606c27.113-54.57,3.489-120.595-48.607-144.013C129.178,7.728,68.497,32.522,44.388,81.884  c-24.441,50.042-5.511,113.729,44.214,139.386c77.956,39.643,130.727-27.393,131.525-31.152"/><path class="st0" d="M142.285,134.396c4.54-3.892,11.745-8.286,11.313-10.665c-0.432-2.378-4.904-7.198-13.042-7.712  c-0.961-0.061-15.523-0.691-22.198,9.945c-5.438,8.665-3.031,18.573,2.378,25.366c6.589,8.274,19.269,10.46,29.403,4.898  c18.701-13.08,8.253-26.589,9.442-29.615c9.296-14.702,37.328-11.242,39.49-12.756c2.162-1.513,3.892-16.107,2.378-18.809  s-29.591-24.071-66.082-22.701C104.651,73.5,81.21,90.832,78.939,93.967c-2.27,3.135-3.892,20.755-1.73,22.052  s29.295,1.405,31.349-0.216c2.054-1.621-2.702-16.972-0.865-20.107c1.838-3.135,15.898-6.736,29.187-7.135  c15.377-0.462,31.457,4.324,33.079,6.918c1.622,2.594-1.73,14.053-1.081,16.431c0.649,2.378,20.826,32.322,20.178,46.483  c-0.649,14.161-5.73,19.566-7.567,20.323c-1.837,0.757-85.756,1.189-87.918-0.432c-2.162-1.622-5.189-13.513-4.757-23.133  s7.253-24.573,10.952-31.565"/>
+        </svg>
+        </a>
+        <a href="mailto:mishniki@yandex.ru" class="header__mail">
+          <svg height="62px" width="62px" style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <style type="text/css">
+              .st0{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+            </style>
+            <path class="st0" d="M90.122,111.336c4.814,10.698,40.475,41.901,43.863,42.08s58.662-49.39,57.057-52.778  S79.246,96.18,76.214,99.568c-3.031,3.388-1.962,78.097,0.713,80.237s111.083,2.318,113.401-1.426  c2.318-3.744,4.814-57.414,1.783-60.623"/><path class="st0" d="M108.268,237.352c59.036,15.089,118.653-21.832,130.648-77.676c11.711-54.524-25.236-108.671-78.551-121.912  C106.315,24.34,48.002,56.183,33.321,110.176c-22.447,84.527,54.151,122.097,57.994,122.09"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="hero flex col-lg-12">
+        <div class="swiper" tabindex="-1">
+          <div class="swiper-wrapper" tabindex="-1">
+            <div class="swiper-slide" style="background-image: url(img/hero-1.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(img/hero-2.jpg)"></div>
+            <div class="swiper-slide" style="background-image: url(img/hero-3.jpg)"></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="hero__content">
+          <ul class="list-reset hero__list">
+            <li>
+              <h1 class="hero__title">Ковры на любой вкус</h1>
+            </li>
+            <li class="list-reset">
+              <p class="text hero__dscr">
+                Во всех магазинах «Ковровый рай» можно выбрать и купить красивый ковер на пол, элитные коврики из шерсти, меха, оригинальные с высоким ворсом, тканые дорожки, интересные изделия авторской работы.
+              </p>
+            </li>
+          </ul>
+          <button class="btn btn-reset hero__btn">Смотреть каталог</button>
+        </div>
+      </section>
+      <section class="about_us">
+        <div class="title">
+          <div class="ornament-left"></div>
+          <h2>О наших преимуществах</h2>
+          <div class="ornament-right"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="about_us__item about_us__item-1">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 463 463" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 463 463">
+                <g>
+                  <path d="M423.5,44H407v-8.5c0-12.958-10.542-23.5-23.5-23.5S360,22.542,360,35.5V44H103v-8.5C103,22.542,92.458,12,79.5,12   S56,22.542,56,35.5V44H39.5C17.72,44,0,61.72,0,83.5v328C0,433.28,17.72,451,39.5,451h384c21.78,0,39.5-17.72,39.5-39.5v-328   C463,61.72,445.28,44,423.5,44z M375,35.5c0-4.687,3.813-8.5,8.5-8.5s8.5,3.813,8.5,8.5v15.942c0,0.02-0.003,0.038-0.003,0.058   S392,51.538,392,51.558V67.5c0,4.687-3.813,8.5-8.5,8.5s-8.5-3.813-8.5-8.5V35.5z M79.5,27c4.687,0,8.5,3.813,8.5,8.5v32   c0,4.687-3.813,8.5-8.5,8.5S71,72.187,71,67.5V51.558c0-0.02,0.003-0.038,0.003-0.058S71,51.462,71,51.442V35.5   C71,30.813,74.813,27,79.5,27z M423.5,436h-384C25.99,436,15,425.01,15,411.5V123h56.498c4.143,0,7.5-3.357,7.5-7.5   s-3.357-7.5-7.5-7.5H15V83.5C15,69.99,25.99,59,39.5,59H56v8.5C56,80.458,66.542,91,79.5,91S103,80.458,103,67.5V59h257v8.5   c0,12.958,10.542,23.5,23.5,23.5S407,80.458,407,67.5V59h16.5c13.51,0,24.5,10.99,24.5,24.5V108h-40.497   c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5,7.5,7.5H448v288.5C448,425.01,437.01,436,423.5,436z"/>
+                  <path d="m375.498,108h-15.997c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5 7.5,7.5h15.997c4.143,0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5z"/>
+                  <path d="m335.001,115.5c0-4.143-3.357-7.5-7.5-7.5h-224.004c-4.143,0-7.5,3.357-7.5,7.5s3.357,7.5 7.5,7.5h224.004c4.143,0 7.5-3.357 7.5-7.5z"/>
+                  <path d="m330.271,235.762h-56.27c-2.479,0-4.658-1.584-5.424-3.94l-17.388-53.516v-0.001c-2.823-8.69-10.551-14.305-19.689-14.305s-16.866,5.615-19.69,14.306l-17.388,53.516c-0.766,2.356-2.945,3.94-5.424,3.94h-56.27c-9.138,0-16.866,5.615-19.69,14.306-2.823,8.69 0.129,17.776 7.521,23.146l45.522,33.074c2.005,1.457 2.838,4.02 2.072,6.377l-17.389,53.515c-2.823,8.69 0.129,17.776 7.521,23.147s16.947,5.371 24.338,0l45.522-33.074c2.006-1.457 4.699-1.457 6.705,0l45.522,33.074c3.696,2.686 7.933,4.028 12.169,4.028s8.473-1.343 12.169-4.028c7.393-5.371 10.345-14.457 7.521-23.147l-17.389-53.515c-0.766-2.357 0.067-4.92 2.072-6.377l45.522-33.074c7.393-5.37 10.345-14.456 7.521-23.146-2.819-8.691-10.548-14.306-19.686-14.306zm3.353,25.317l-45.522,33.074c-7.279,5.288-10.302,14.591-7.521,23.146l17.389,53.515c1.188,3.657-1.286,5.806-2.072,6.377-0.785,0.572-3.592,2.263-6.705,0.001l-45.522-33.074c-3.64-2.645-7.904-3.967-12.169-3.967s-8.529,1.322-12.169,3.967l-45.522,33.074c-3.113,2.262-5.919,0.571-6.705-0.001-0.786-0.571-3.26-2.72-2.072-6.377l17.386-53.514c2.78-8.556-0.242-17.858-7.521-23.146l-45.522-33.074c-3.11-2.26-2.372-5.452-2.071-6.376 0.3-0.925 1.579-3.941 5.424-3.941h56.27c8.996,0 16.909-5.749 19.689-14.306l17.388-53.515c1.188-3.657 4.453-3.941 5.425-3.941s4.236,0.284 5.425,3.94l17.388,53.516c2.78,8.557 10.693,14.306 19.689,14.306h56.27c3.845,0 5.124,3.017 5.424,3.941 0.298,0.923 1.036,4.115-2.074,6.375z"/>
+                  <path d="m267.893,269.317c-11.736,9.127-19.098,22.842-20.198,37.628-0.466,6.262 0.187,12.509 1.938,18.569 0.949,3.283 3.946,5.419 7.201,5.419 0.689,0 1.392-0.096 2.087-0.297 3.979-1.15 6.272-5.309 5.122-9.288-1.256-4.342-1.723-8.813-1.39-13.29 0.786-10.566 6.053-20.371 14.448-26.901 3.27-2.543 3.858-7.255 1.315-10.524-2.541-3.271-7.252-3.859-10.523-1.316z"/>
+                  <path d="m238.553,242.9c-1.408-3.895-5.705-5.91-9.604-4.502-3.895,1.408-5.911,5.708-4.502,9.604 2.185,6.041 5.401,11.563 9.561,16.413 1.484,1.729 3.584,2.617 5.697,2.617 1.728,0 3.464-0.594 4.879-1.807 3.144-2.697 3.507-7.432 0.811-10.576-2.975-3.467-5.277-7.42-6.842-11.749z"/>
+                </g>
+              </svg>
+              <div class="about_us__text">
+                <p class="text">Более 20 лет на рынке ковровых изделий</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="about_us__item about_us__item-2">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 55.835 55.835" style="enable-background:new 0 0 55.835 55.835;" xml:space="preserve">
+                <g>
+                  <path d="M55.288,39.943c-0.398-4.089-3.45-7.052-7.271-7.052c-2.396,0-4.407,1.448-5.684,3.212
+                    c-1.276-1.764-3.288-3.213-5.684-3.213c-3.819,0-6.871,2.963-7.27,7.051c-0.042,0.269-0.145,1.222,0.225,2.711
+                    c0.545,2.196,1.8,4.19,3.631,5.77l8.335,7.133c0.222,0.187,0.492,0.28,0.763,0.28c0.273,0,0.546-0.096,0.769-0.285l8.331-7.13
+                    c1.829-1.576,3.084-3.57,3.63-5.768C55.433,41.164,55.33,40.212,55.288,39.943z M53.122,42.17c-0.445,1.794-1.48,3.431-2.991,4.732
+                    l-7.797,6.673l-7.794-6.671c-1.514-1.304-2.549-2.941-2.993-4.734c-0.302-1.214-0.193-1.897-0.194-1.897l0.017-0.106
+                    c0.244-2.621,2.137-5.275,5.281-5.275c2.189,0,3.974,1.811,4.77,3.605l0.914,2.061l0.914-2.061c0.796-1.794,2.579-3.604,4.77-3.604
+                    c3.146,0,5.038,2.654,5.296,5.367C53.315,40.266,53.426,40.95,53.122,42.17z"/>
+                  <path d="M27.501,12c-0.553,0-1,0.447-1,1s0.447,1,1,1h18c0.553,0,1-0.447,1-1s-0.447-1-1-1H27.501z"/>
+                  <path d="M46.501,27c0-0.553-0.447-1-1-1h-18c-0.553,0-1,0.447-1,1s0.447,1,1,1h18C46.054,28,46.501,27.553,46.501,27z"/>
+                  <path d="M21.08,7.241c-0.418-0.359-1.05-0.312-1.409,0.108l-6.248,7.288l-3.822-2.866c-0.44-0.33-1.068-0.243-1.399,0.2
+                    c-0.332,0.441-0.242,1.068,0.2,1.399l4.571,3.429c0.179,0.135,0.39,0.2,0.599,0.2c0.283,0,0.563-0.119,0.76-0.35l6.857-8
+                    C21.549,8.231,21.5,7.601,21.08,7.241z"/>
+                  <path d="M21.08,21.241c-0.418-0.359-1.05-0.312-1.409,0.108l-6.248,7.288l-3.822-2.866c-0.44-0.33-1.068-0.243-1.399,0.2
+                    c-0.332,0.441-0.242,1.068,0.2,1.399l4.571,3.429c0.179,0.135,0.39,0.2,0.599,0.2c0.283,0,0.563-0.119,0.76-0.35l6.857-8
+                    C21.549,22.231,21.5,21.601,21.08,21.241z"/>
+                  <path d="M19.671,36.35l-6.248,7.287l-3.822-2.866c-0.44-0.331-1.068-0.243-1.399,0.2c-0.332,0.441-0.242,1.068,0.2,1.399
+                    l4.571,3.429c0.179,0.135,0.39,0.2,0.599,0.2c0.283,0,0.563-0.119,0.76-0.35l6.857-7.999c0.36-0.419,0.312-1.05-0.108-1.409
+                    C20.662,35.882,20.03,35.93,19.671,36.35z"/>
+                  <path d="M25.501,52H12.677C7.066,52,2.501,47.436,2.501,41.824V12.176C2.501,6.564,7.066,2,12.677,2h29.648
+                    c5.611,0,10.176,4.564,10.176,10.176V30c0,0.553,0.447,1,1,1s1-0.447,1-1V12.176C54.501,5.462,49.039,0,42.325,0H12.677
+                    C5.963,0,0.501,5.462,0.501,12.176v29.648C0.501,48.538,5.963,54,12.677,54h12.824c0.553,0,1-0.447,1-1S26.054,52,25.501,52z"/>
+                </g>
+              </svg>
+              <p class="text">Большой ассортимент ковров</p>
+            </div>              
+          </div>
+          <div class="col-lg-3">
+            <div class="about_us__item about_us__item-3">
+              <svg viewbox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><title>carpet</title><g id="carpet"><circle cx="60" cy="27" r="1"/><circle cx="38" cy="7" r="1"/><circle cx="59" cy="36" r="1"/><line x1="6" y1="2.463" x2="6" y2="3.878" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="6" y1="8.122" x2="6" y2="9.537" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="2.463" y1="6" x2="3.878" y2="6" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="8.122" y1="6" x2="9.537" y2="6" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="10.843 20 7 20 7 16 10.749 16" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="53.276 16 57 16 57 20 53 20" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="16 23 48 23 56 46 56 56 8 56 8 46 14.261 28" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="12" y1="46" x2="19" y2="46" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="23" y1="46" x2="27" y2="46" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="31" y1="46" x2="52" y2="46" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="10" y1="60" x2="10" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="14" y1="60" x2="14" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="18" y1="60" x2="18" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="22" y1="60" x2="22" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="26" y1="60" x2="26" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="30" y1="60" x2="30" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="34" y1="60" x2="34" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="38" y1="60" x2="38" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="42" y1="60" x2="42" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="46" y1="60" x2="46" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="50" y1="60" x2="50" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><line x1="54" y1="60" x2="54" y2="56" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="28 31 31 28 34 31" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="34 31 37 28 40 31" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="40 31 43 28 46 31" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="15 40 18 37 21 40" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="21 40 24 37 27 40" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><polyline points="27 40 30 37 33 40" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/><path d="M51,12H13c-1.105,0-2,2.462-2,5.5S11.9,23,13,23H51c1.1,0,2-2.462,2-5.5S52.105,12,51,12Z" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px"/></g></svg>
+              <p class="text">Обрезка и оверлок краёв за 100 руб/м!</p>              
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div class="about_us__item about_us__item-4">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                <g>
+                  <path d="M332.8,460.8h-17.067c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533H332.8c4.71,0,8.533-3.823,8.533-8.533
+                    S337.51,460.8,332.8,460.8z"/>
+                  <path d="M264.533,460.8H179.2c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533h85.333c4.71,0,8.533-3.823,8.533-8.533
+                    S269.244,460.8,264.533,460.8z"/>
+                  <path d="M128,460.8H8.533c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533H128c4.71,0,8.533-3.823,8.533-8.533
+                    S132.71,460.8,128,460.8z"/>
+                  <path d="M500.966,249.967l-23.39-23.39L469.333,128c0-23.526-19.14-42.667-42.667-42.667h-59.733
+                    c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533h59.733c13.875,0,25.6,11.725,25.626,26.308l7.765,93.158H431.94
+                    l10.889-21.786c2.116-4.215,0.401-9.335-3.814-11.443c-4.224-2.116-9.344-0.401-11.452,3.814l-14.703,29.414h-45.926
+                    c-4.71,0-8.533,3.823-8.533,8.533c0,4.71,3.823,8.533,8.533,8.533h98.867l23.1,23.1c4.864,4.864,6.016,16.051,6.033,19.567v8.533
+                    H486.4c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533h8.533v68.267h-17.749c-4.156-28.902-29.013-51.2-59.051-51.2
+                    c-32.939,0-59.733,26.795-59.733,59.733s26.795,59.733,59.733,59.733c30.037,0,54.895-22.298,59.051-51.2h26.283
+                    c4.71,0,8.533-3.823,8.533-8.533V281.6C512,279.492,511.693,260.685,500.966,249.967z M418.133,426.667
+                    c-23.526,0-42.667-19.14-42.667-42.667s19.14-42.667,42.667-42.667c23.526,0,42.667,19.14,42.667,42.667
+                    S441.66,426.667,418.133,426.667z"/>
+                  <path d="M128,358.4c-14.114,0-25.6,11.486-25.6,25.6s11.486,25.6,25.6,25.6s25.6-11.486,25.6-25.6S142.114,358.4,128,358.4z
+                    M128,392.533c-4.702,0-8.533-3.831-8.533-8.533s3.831-8.533,8.533-8.533s8.533,3.831,8.533,8.533S132.702,392.533,128,392.533z"
+                    />
+                  <path d="M503.467,460.8H366.933c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533h136.533
+                    c4.71,0,8.533-3.823,8.533-8.533S508.177,460.8,503.467,460.8z"/>
+                  <path d="M418.133,358.4c-14.114,0-25.6,11.486-25.6,25.6s11.486,25.6,25.6,25.6s25.6-11.486,25.6-25.6
+                    S432.247,358.4,418.133,358.4z M418.133,392.533c-4.702,0-8.533-3.831-8.533-8.533s3.831-8.533,8.533-8.533
+                    s8.533,3.831,8.533,8.533S422.835,392.533,418.133,392.533z"/>
+                  <path d="M332.8,34.133H42.667C19.14,34.133,0,53.274,0,76.8v273.067c0,23.927,18.739,42.667,42.667,42.667
+                    c4.71,0,8.533-3.823,8.533-8.533s-3.823-8.533-8.533-8.533c-14.353,0-25.6-11.247-25.6-25.6V76.8c0-14.114,11.486-25.6,25.6-25.6
+                    h281.6v238.933h-281.6c-4.71,0-8.533,3.823-8.533,8.533s3.823,8.533,8.533,8.533h281.6v68.267H187.051
+                    c-4.156-28.902-29.022-51.2-59.051-51.2c-32.939,0-59.733,26.795-59.733,59.733S95.061,443.733,128,443.733
+                    c30.029,0,54.895-22.298,59.051-51.2H332.8c4.71,0,8.533-3.823,8.533-8.533V42.667C341.333,37.956,337.51,34.133,332.8,34.133z
+                    M128,426.667c-23.526,0-42.667-19.14-42.667-42.667s19.14-42.667,42.667-42.667c23.526,0,42.667,19.14,42.667,42.667
+                    S151.526,426.667,128,426.667z"/>
+                </g>
+              </svg>
+              <p class="text">Доставка в любую точку города!</p>              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="title">
+          <div class="ornament-left"></div>
+          <h2>Стили ковров</h2>
+          <div class="ornament-right"></div>
+        </div>
+        <div class="catalog__full flex row">
+          <div class="catalog__items catalog__items-left flex col-lg-5">
+            <div class="catalog__item catalog__item-1">
+              <h3 class="catalog__title">
+                  Современные
+              </h3>
+              <p class="catalog__text">
+                  от&nbsp;5&nbsp;000&nbsp;р
+              </p>
+                <a href="#" class="catalog__link">
+                  100500 ковров
+                </a>
+            </div>
+            <div class="catalog__item catalog__item-2">
+              <h3 class="catalog__title">
+                Традиционные
+              </h3>
+              <p class="catalog__text">
+                от&nbsp;3&nbsp;000&nbsp;р
+              </p>
+              <a href="#" class="catalog__link">
+                100500 ковров
+              </a>
+            </div>
+          </div>
+          <div class="catalog__items catalog__items-right flex col-lg-7">
+            <div class="catalog__item catalog__item-3 flex">
+              <h3 class="catalog__title catalog__title-right">
+                Перейти в каталог
+              </h3>
+              <a href="#" class="catalog__link">
+                100500 ковров
+              </a>
+            </div>
+            <div class="catalog__item catalog__item-4 flex">
+              <h3 class="catalog__title catalog__title-right">
+                Информация об уходе за коврами
+              </h3>
+              <a href="#" class="catalog__link">
+                Подробнее
+              </a>
+            </div>            
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="title">
+          <div class="ornament-left"></div>
+          <h2>Контакты</h2>
+          <div class="ornament-right"></div>
+        </div>
+        <div class="contacts__full row">
+          <div class="contacts__left col-lg-5">
+            <ul class="list-reset contacts__items">
+              <li class="contacts__item">
+                <address class="contacts__item contacts__item-address">
+                  <div class="contacts__item-left">
+                    <p class="text contacts__title">Адреса:</p>
+                  </div>
+                  <div class="contacts__item-right">
+                    <p class="text contactas__item-text">г. Ижевск, ул. 9 Января, 219А</p>
+                    <p class="text contactas__item-text">г. Ижевск, СГ "Хозяйственная база", ул.Пойма, 7, 105 а, 1 этаж</p>
+                    <p class="text contactas__item-text">г. Ижевск, СЦ "Азбука ремонта", ул.Молодёжная, 107 Б, 219 и 220 офис, 2 этаж</p>
+                    <p class="text contactas__item-text">г. Ижевск, СГ "Гвоздь", ул.Удмуртская, 304Н</p>
+                  </div>
+                </address>
+              </li>
+              <li class="contacts__item">
+                <p class="text contacts__title contacts__item-left">Телефоны:</p>
+                <a href="tel:+79090607290" class="text contacts__link contacts__item-right">
+                  +7(909)060-72-90
+                </a>
+              </li>
+              <li class="contacts__item">
+                <p class="text contacts__title contacts__item-left">E-mail:</p>
+                <a href="mailto:mishniki@yandex.ru" class="text contacts__link contacts__item-right">mishniki@yandex.ru</a>
+              </li>
+              <li class="contacts__item">
+                <div class="contacts__item-left">
+                  <p class="text contacts__title">График:</p>
+                </div>
+                <div class="contacts__item-right">
+                  <p class="text">Понедельник-суббота, с 10:00 до 20:00</p>
+                  <p class="text">Воскресенье, с 10:00 до 19:00</p>
+                  <p class="text">Воскресенье, с 10:00 до 18:00 (В СГ "Гвоздь")</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__right col-lg-7">
+            <div id="map" style="max-width: 1000px; height: 850px"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container footer__container flex">
+        <a href="index.html" class="footer__logo logo">
+          <picture>
+            <img src="img/logo-white.png" class="footer__logo-img" alt="Логотип Коврового рая">
+          </picture>
+        </a>
+        <div class="footer__righ">
+          <a href="https://vk.com/kovray377" class="footer__vk">
+            <svg height="64px" width="64px" style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <style type="text/css">
+                .st0{stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+              </style>
+              <path class="st0" d="M137.547,232.778c60.681-5.55,104.493-60.302,97.096-116.939c-7.222-55.297-60.168-93.947-114.839-88.571  c-55.424,5.449-99.709,54.979-95.462,110.772c7.153,87.164,91.909,96.916,95.528,95.623"/><path class="st0" d="M100.607,102.304c-0.31-2.259,6.768-4.733,13.114-5.671c11.549-1.707,21.221,3.19,21.974,6.025  c0.753,2.836-0.797,30.834,3.899,31.19c4.696,0.355,18.165-29.949,21.266-32.608c3.101-2.658,31.544-1.861,31.544,1.063  s-24.145,30.879-24.101,35.443c0.044,4.563,28,28.398,25.519,31.899c-2.481,3.5-32.271,3.64-33.671,2.481  c-1.4-1.159-12.626-18.031-18.43-17.013c-5.804,1.019-1.817,16.746-3.544,18.785s-11.608,1.595-19.494,0.355  c-41.911-7.886-67.076-70.443-64.86-73.721c2.215-3.278,27.912-1.595,30.481,0.355s12.671,38.633,24.101,35.443  c3.057-1.462,1.772-26.228,1.772-26.228"/>
+            </svg>
+          </a>
+          <a href="tel:+79090607290" class="footer__phone">
+            <svg height="64px" width="64px" style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <style type="text/css">
+                .st0{stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+              </style>
+            <path class="st0" d="M228.649,174.606c27.113-54.57,3.489-120.595-48.607-144.013C129.178,7.728,68.497,32.522,44.388,81.884  c-24.441,50.042-5.511,113.729,44.214,139.386c77.956,39.643,130.727-27.393,131.525-31.152"/><path class="st0" d="M142.285,134.396c4.54-3.892,11.745-8.286,11.313-10.665c-0.432-2.378-4.904-7.198-13.042-7.712  c-0.961-0.061-15.523-0.691-22.198,9.945c-5.438,8.665-3.031,18.573,2.378,25.366c6.589,8.274,19.269,10.46,29.403,4.898  c18.701-13.08,8.253-26.589,9.442-29.615c9.296-14.702,37.328-11.242,39.49-12.756c2.162-1.513,3.892-16.107,2.378-18.809  s-29.591-24.071-66.082-22.701C104.651,73.5,81.21,90.832,78.939,93.967c-2.27,3.135-3.892,20.755-1.73,22.052  s29.295,1.405,31.349-0.216c2.054-1.621-2.702-16.972-0.865-20.107c1.838-3.135,15.898-6.736,29.187-7.135  c15.377-0.462,31.457,4.324,33.079,6.918c1.622,2.594-1.73,14.053-1.081,16.431c0.649,2.378,20.826,32.322,20.178,46.483  c-0.649,14.161-5.73,19.566-7.567,20.323c-1.837,0.757-85.756,1.189-87.918-0.432c-2.162-1.622-5.189-13.513-4.757-23.133  s7.253-24.573,10.952-31.565"/>
+          </svg>
+          </a>
+          <a href="mailto:mishniki@yandex.ru" class="footer__mail">
+            <svg height="67px" width="67px" style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <style type="text/css">
+                .st0{stroke-width:8;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+              </style>
+              <path class="st0" d="M90.122,111.336c4.814,10.698,40.475,41.901,43.863,42.08s58.662-49.39,57.057-52.778  S79.246,96.18,76.214,99.568c-3.031,3.388-1.962,78.097,0.713,80.237s111.083,2.318,113.401-1.426  c2.318-3.744,4.814-57.414,1.783-60.623"/><path class="st0" d="M108.268,237.352c59.036,15.089,118.653-21.832,130.648-77.676c11.711-54.524-25.236-108.671-78.551-121.912  C106.315,24.34,48.002,56.183,33.321,110.176c-22.447,84.527,54.151,122.097,57.994,122.09"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=40c4039e-9c63-4b42-9329-0f827800e518&lang=ru_RU" type="text/javascript"></script>
+<script src="script.js"></script>
+</body>
+</html>
