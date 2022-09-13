@@ -43,8 +43,15 @@ type="text/javascript">
   function init(){
     var myMap = new ymaps.Map("map", {
         center: [56.849940, 53.231905],
-        zoom: 13
+        zoom: 12
     });
+
+    myMap.controls.remove('searchControl');
+    myMap.controls.remove('zoomControl');
+    myMap.controls.remove('trafficControl');
+    myMap.controls.remove('geolocationControl');
+    myMap.controls.remove('fullscreenControl');
+    myMap.controls.remove('rulerControl');
 
     // 9 Января
     var myGeoObject = new ymaps.GeoObject({

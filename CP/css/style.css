@@ -100,26 +100,25 @@ body {
 .text {
   margin: 0;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 16px;
+  line-height: 32px;
   color: var(--text-color);
 }
 
 h1 {
   margin: 0;
   margin-bottom: 30px;
-  font-size: 58px;
+  font-size: 72px;
   font-weight: 700;
-  line-height: 100%;
 }
 
 h2 {
   margin: 0;
   padding: 0 30px;
   text-align: center;
-  font-size: 48px;
   font-weight: 400;
-  line-height: 100%;
+  font-size: 48px;
+  line-height: 65px;
 }
 
 .title {
@@ -132,7 +131,7 @@ h2 {
 .ornament-left {
   width: 600px;
   min-height: 100px;
-  background-image: url(/img/ornament.png);
+  background-image: url(../img/ornament.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -141,7 +140,7 @@ h2 {
 .ornament-right {
   width: 600px;
   min-height: 100px;
-  background-image: url(/img/ornament.png);
+  background-image: url(../img/ornament.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -169,8 +168,17 @@ h2 {
   align-items: center;
 }
 
-.header__right {
+.header__container-menu {
+  padding: 30px 75px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header__left {
+  align-items: center;
+}
+
+.header__right {
   align-items: center;
 }
 
@@ -227,7 +235,6 @@ h2 {
   top: 0;
   z-index: 100;
   min-width: 100%;
-  min-height: 450px;
   align-items: center;
   background-color: #FFF;
   border-bottom-left-radius: 20px;
@@ -291,6 +298,7 @@ h2 {
 }
 
 .header__nav__items {
+  margin-bottom: 40px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -321,6 +329,16 @@ h2 {
   color: var(--brend-color);
 }
 
+.header__nav__social svg {
+  height: 51px;
+  width: 51px;
+}
+
+.header__mail svg {
+  height: 54px;
+  width: 54px;
+}
+
 .header__info {
   justify-content: center;
 }
@@ -335,13 +353,13 @@ h2 {
 }
 
 .header__info__item-1 {
-  background-image: url(/img/header-info-1.jpg);
+  background-image: url(../img/header-info-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header__info__item-2 {
-  background-image: url(/img/header-info-2.jpg);
+  background-image: url(../img/header-info-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -368,6 +386,7 @@ h2 {
   font-weight: 700;
   font-size: 34px;
   line-height: 40px;
+  text-align: center;
   text-shadow: #000 0px 0px 8px;
   color: var(--titletext-color);
 }
@@ -463,7 +482,7 @@ h2 {
 }
 
 .hero__list {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   color: var(--herotext-color);
   text-shadow: #000 0 0 5px;
 }
@@ -474,6 +493,9 @@ h2 {
 
 .hero__dscr {
   max-width: 750px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
   color: var(--herotext-color);
 }
 
@@ -540,7 +562,7 @@ h2 {
 .about_us__item {
   display: flex;
   flex-direction: column;
-  min-height: 320px;
+  min-height: 500px;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -552,7 +574,7 @@ h2 {
 .about_us__item svg {
   width: 150px;
   height: 150px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   fill: var(--brend-color);
   stroke: var(--brend-color);
 }
@@ -565,6 +587,13 @@ h2 {
 .about_us__item-4 svg {
   width: 170px;
   height: 170px;
+}
+
+.about_us__dscr {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 40px;
+  color: var(--brend-color);
 }
 
 /* Catalog */
@@ -613,7 +642,7 @@ h2 {
   line-height: 16px;
   padding: 0 15px 3px 0px;
   color: var(--brendtext-color);
-  background-image: url("/img/catalog_arrow.svg");
+  background-image: url("../img/catalog_arrow.svg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 10px;
@@ -655,7 +684,7 @@ h2 {
   min-height: 400px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("/img/catalog_modern.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/catalog_modern.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--brend-color);
@@ -668,7 +697,7 @@ h2 {
   min-height: 400px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("/img/catalog_traditional.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/catalog_traditional.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--brend-color);
@@ -687,9 +716,10 @@ h2 {
   min-height: 540px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("/img/catalog_all.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("../img/catalog_all.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: var(--brend-color);
   border-radius: 15px;
 }
@@ -699,9 +729,10 @@ h2 {
   min-height: 540px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("/img/catalog_clean.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("../img/catalog_clean.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   background-color: var(--brend-color);
   border-radius: 15px;
 }
@@ -741,18 +772,18 @@ h2 {
 
 .contacts__title {
   font-weight: 700;
+  font-size: 20px;
 }
 
 .contacts__text {
   margin: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
 }
 
 .contactas__item-text {
   padding-left: 40px;
-  background-image: url(/img/location-text.svg);
+  background-image: url(../img/location-text.svg);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 30px 30px;
@@ -774,6 +805,10 @@ h2 {
 }
 
 /* Map */
+
+.contacts__right {
+  min-height: 580px;
+}
 
 [class*="balloon__layout"] {
   border: 2px solid var(--brend-color);
@@ -798,7 +833,7 @@ h2 {
 /* Footer */
 
 .footer {
-  background-image: url(/img/footer.jpg);
+  background-image: url(../img/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 20px;
