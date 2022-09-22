@@ -65,6 +65,12 @@
     margin-bottom: 20px;
   }
 
+  /* CARPETS */
+
+  .carpets__link {
+    font-size: 30px;
+  }
+
 }
 
 @media (max-width: 1170px) {
@@ -273,6 +279,10 @@
 
   .catalog__link {
     font-size: 18px;
+  }
+
+  .carpets__link {
+    font-size: 50px;
   }
 
 }
@@ -486,6 +496,13 @@
     justify-content: space-between;
   }
 
+  /* CARPETS */
+
+  .carpets__link {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -494,6 +511,10 @@
 
   .container {
     padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 32px;
   }
 
   /* Header */

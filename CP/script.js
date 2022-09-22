@@ -140,4 +140,4 @@ type="text/javascript">
       iconOffset: [-25, -45],
       });
       myMap.geoObjects.add(myPlacemark);
-  }
+}

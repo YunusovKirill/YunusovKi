@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -45,7 +46,18 @@ max-width: 100%;
 }
 
 body {
+  height: 100%;
   font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1 1 auto;
 }
 
 /* Global */
@@ -107,7 +119,6 @@ body {
 
 h1 {
   margin: 0;
-  margin-bottom: 30px;
   font-size: 72px;
   font-weight: 700;
 }
@@ -489,6 +500,7 @@ h2 {
 
 .hero__title {
   max-width: 500px;
+  margin-bottom: 30px;
 }
 
 .hero__dscr {
@@ -895,4 +907,98 @@ h2 {
 .footer__mail:active svg {
   outline: none;
   stroke: var(--brend-active-color);
+}
+
+
+/* CARPETS */
+
+.carpets {
+  margin-bottom: 50px;
+}
+
+.carpets__title {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  text-align: center;
+  background-image: url(../img/carpets-title.jpg);
+  color: var(--titletext-color);
+  border-radius: 20px;
+}
+
+.carpets__items {
+  position: relative;
+  min-height: 400px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.carpets__link:focus {
+  outline: 2px solid var(--brend-color);
+  outline-offset: 5px;
+  border-radius: 20px;
+}
+
+.carpets__link:hover {
+  outline: none;
+}
+
+.carpets__items:hover {
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.carpets__items:active {
+  box-shadow: 0px 0px 15px 2px var(--brend-color);
+}
+
+.carpets__link {
+  content: "";
+  position: absolute;
+  padding-top: 300px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--catologtext-color);
+  text-shadow: #000 0px 0px 8px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carpets__tradition {
+  background-image: url(../img/tradition.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carpets__modern {
+  background-image: url(../img/modern.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carpets__kids {
+  background-image: url(../img/kids.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carpets__fluffy {
+  background-image: url(../img/fluffy.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carpets__path {
+  background-image: url(../img/path.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carpets__grass {
+  background-image: url(../img/grass.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,0 +1,116 @@
+:root {
+  --brend-color: #7C1C26;
+  --brend-active-color: #c41224;
+  --brendtext-color: #FFCC66;
+  --text-color: #333;
+  --btn-color: #7C1C26;
+  --btntext-color: #FFF;
+  --titletext-color: #FFF;
+  --herotext-color: #FFF;
+  --catologtext-color: #FFF;
+}
+
+main {
+  margin-bottom: 50px;
+}
+
+.product__items {
+  min-height: 500px;
+  margin-bottom: 30px;
+  padding: 10px;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, .5) ;
+  border-radius: 20px;
+}
+
+.product__item-img {
+  z-index: 10;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  transition: transform .3s ease-in-out;
+}
+
+.product__item-img:hover  {
+  z-index: 11;
+}
+
+.product__item-img:active  {
+  z-index: 11;
+  transform: scale(2);
+}
+
+.product__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.product__select {
+  margin-bottom: 20px;
+}
+
+select {
+  font-family: 'Montserrat';
+  padding: 9px 66px 11px 15px;
+  border-radius: 10px;
+}
+
+.choices {
+  border-radius: 10px;
+}
+
+.choices__inner {
+  font-size: 20px;
+  text-align: center;
+  background-color: #FFF;
+  border: 1px solid var(--brend-color);
+  border-radius: 10px;
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item .choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable {
+  padding: 0 15px;
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  font-size: 18px;
+}
+
+.choices__placeholder {
+  opacity: 1;
+}
+
+.is-focused .choices__inner, .is-open .choices__inner {
+  position: relative;
+  border: 1px solid var(--brend-color);
+  border-radius: 10px;
+}
+
+.is-open .choices__list--dropdown, .is-open .choices__list[aria-expanded] {
+  z-index: 12;
+  padding-top: 20px;
+  top: 85%;
+  text-align: center;
+  border-color: var(--brend-color);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 0;
+}
+
+.choices__item:not(:first-child) {
+  margin-bottom: 20px;
+}
+
+#choices--select-item-choice-1 {
+  display: none;
+}
+
+.product__btn {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
