@@ -758,7 +758,7 @@ h2 {
 .contacts__items {
   padding: 40px;
   border-radius: 40px;
-  box-shadow: 0 0 8px 2px #7C1C26 ;
+  box-shadow: 0 0 8px 2px #7C1C26;
 }
 
 .contacts__item {
@@ -814,6 +814,10 @@ h2 {
 
 .contacts__link:active {
   color: var(--brend-active-color);
+}
+
+.contacts__item-address {
+  font-style: normal;
 }
 
 /* Map */
@@ -1001,4 +1005,41 @@ h2 {
   background-image: url(../img/grass.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+/* COMPANY */
+
+.company {
+  flex-direction: column;
+}
+
+.company__text {
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 200%;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+.company__text:first-child {
+  font-weight: 700;
+}
+
+.company__img {
+  max-width: 1500px;
+  align-self: center;
+}
+
+.company__img img {
+  border-radius: 20px;
+}
+
+/* DELIVERY */
+
+.delivery__text {
+  margin-bottom: 50px;
+  font-size: 30px;
+  line-height: 200%;
+  text-align: justify;
 }
