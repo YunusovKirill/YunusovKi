@@ -14,6 +14,97 @@
   <title>Современные ковры</title>
 </head>
 <body>
+  <div class="modals__form">
+    <div class="modal__form" data-target="modal">
+      <div class="form__header">
+        <h2 class="contacts__title contacts__title__form">Какой ковёр будем брать? 🤔</h2>
+        <button class="btn-reset form__close">
+          <span class="close__line"></span>
+          <span class="close__line"></span>
+        </button>
+      </div>
+      <form action="#" class="form" method="POST">
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Название ковра</legend>
+          <label class="form__label">
+            <input class="form__label__input" type="text" name="Название ковра" placeholder="DECO" data-validate-field="collection">
+          </label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Дизайн ковра</legend>
+          <label class="form__label">
+            <input class="form__label__input" type="number" name="Дизайн ковра" placeholder="10128" data-validate-field="design">
+          </label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Размер ковра</legend>
+          <label class="form__label">
+            <input class="form__label__input" type="text" name="Размер" placeholder="2 х 3" data-validate-field="size">
+          </label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Цвет ковра</legend>
+          <label class="form__label">
+            <input class="form__label__input" type="text" name="Цвет" placeholder="Серый" data-validate-field="color">
+          </label>
+        </fieldset>
+        <div class="form__radio">
+          <div class="form__title form__title__radio">Прямой или овал?</div>
+          <div class="form__radio__item">
+            <input type="radio" id="straight" checked value="Прямой" name="Форма ковра" class="form__radio__item__input">
+            <label for="straight" class="form__label__radio"><span>Прямой</span></label>
+          </div>
+          <div class="form__radio__item">
+            <input type="radio" id="oval" value="Овал" name="Форма ковра" class="form__radio__item__input">
+            <label for="oval" class="form__label__radio"><span>Овал</span></label>
+          </div>
+        </div>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Как Вас зовут?</legend>
+          <label class="form__label">
+            <input class="form__label__input" type="text" name="Имя" placeholder="Имя" data-validate-field="name">
+          </label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Ваш телефон</legend>
+          <label class="form__label">
+            <input class="form__label__input" type="tel" name="Телефон" placeholder="Телефон" data-validate-field="tel" data-validate-rules="phone">
+          </label>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Ваш email</legend>
+          <label class="form__label">
+            <input class="form__label__input" type="email" name="Email" placeholder="hochu.kover@kovray.ru" data-validate-field="mail">
+          </label>
+        </fieldset>
+        <div class="form__radio">
+          <div class="form__title form__title__radio">Способ доставки</div>
+          <div class="form__radio__item">
+            <input type="radio" id="delivery" checked value="Доставка" name="Способ доставки" class="form__radio__item__input">
+            <label for="delivery" class="form__label__radio"><span>Самовывоз</span></label>
+          </div>
+          <div class="form__radio__item">
+            <input type="radio" id="pickup" value="Самовывоз" name="Способ доставки" class="form__radio__item__input">
+            <label for="pickup" class="form__label__radio"><span>Доставка</span></label>
+          </div>
+        </div>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Адрес</legend>
+          <label class="form__label">
+            <textarea class="form__textarea" name="Адрес" data-validate-field="adress" placeholder="При самовывозе укажите, пожалуйста, отдел откуда будете забирать заказ"></textarea>
+          </label>  
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Комментарии к заказу</legend>
+          <label class="form__label">
+            <textarea class="form__textarea" name="Комментарии" placeholder="Напишите ваши особые пожелания"></textarea>
+          </label>  
+        </fieldset>
+        <button class="btn btn-reset form__btn contacts__btn" data-path="modals__form-success">Отправить</button>
+        <p class="form__privacy">Нажимая кнопку "Отправить!", я подтверждаю, что ознакомлен и согласен с условиями <a href="privacy.html" class="form__privacy__link">политики конфиденциальности</a></p>  
+      </form>
+    </div>
+  </div>    
   <div class="wrapper">
     <header class="header">
       <div class="header__menu flex">
@@ -29,13 +120,13 @@
                   <a href="catalog.html" class="header__link">Каталог</a>
                 </li>
                 <li class="header__nav__item">
-                  <a href="delivery.html" class="header__link">Оплата и доставка</a>
-                </li>
-                <li class="header__nav__item">
                   <a href="company.html" class="header__link">О компании</a>
                 </li>
                 <li class="header__nav__item">
                   <a href="contacts.html" class="header__link">Контакты</a>
+                </li>
+                <li class="header__nav__item">
+                  <a href="privacy.html" class="header__link">Политика конфиденциальности</a>
                 </li>
               </ul>
               <div class="header__nav__social">
@@ -55,7 +146,7 @@
                   <path class="st0" d="M228.649,174.606c27.113-54.57,3.489-120.595-48.607-144.013C129.178,7.728,68.497,32.522,44.388,81.884  c-24.441,50.042-5.511,113.729,44.214,139.386c77.956,39.643,130.727-27.393,131.525-31.152"/><path class="st0" d="M142.285,134.396c4.54-3.892,11.745-8.286,11.313-10.665c-0.432-2.378-4.904-7.198-13.042-7.712  c-0.961-0.061-15.523-0.691-22.198,9.945c-5.438,8.665-3.031,18.573,2.378,25.366c6.589,8.274,19.269,10.46,29.403,4.898  c18.701-13.08,8.253-26.589,9.442-29.615c9.296-14.702,37.328-11.242,39.49-12.756c2.162-1.513,3.892-16.107,2.378-18.809  s-29.591-24.071-66.082-22.701C104.651,73.5,81.21,90.832,78.939,93.967c-2.27,3.135-3.892,20.755-1.73,22.052  s29.295,1.405,31.349-0.216c2.054-1.621-2.702-16.972-0.865-20.107c1.838-3.135,15.898-6.736,29.187-7.135  c15.377-0.462,31.457,4.324,33.079,6.918c1.622,2.594-1.73,14.053-1.081,16.431c0.649,2.378,20.826,32.322,20.178,46.483  c-0.649,14.161-5.73,19.566-7.567,20.323c-1.837,0.757-85.756,1.189-87.918-0.432c-2.162-1.622-5.189-13.513-4.757-23.133  s7.253-24.573,10.952-31.565"/>
                 </svg>
                 </a>
-                <a href="mailto:mishniki@yandex.ru" class="header__mail header__mail-menu">
+                <a href="mailto:kover.ray@yandex.ru" class="header__mail header__mail-menu">
                   <svg style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <style type="text/css">
                       .st0{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -69,13 +160,13 @@
           <div class="header__info row col-lg-9 col-md-12">
             <div class="header__info__items col-sm-6 col-12">
               <div class="header__info__item header__info__item-1 flex">
-                <a href="#" class="header__title__link"></a>
-                <p class="header__title__text">Как выбрать ковёр?</p>
+                <a href="delivery.html" class="header__title__link"></a>
+                <p class="header__title__text">Оплата и доставка</p>
               </div>
             </div>
             <div class="header__info__items col-sm-6 col-12">
               <div class="header__info__item header__info__item-2 flex">
-                <a href="#" class="header__title__link"></a>
+                <a href="clean.html" class="header__title__link"></a>
                 <p class="header__title__text">Рекомендации по уходу</p>
               </div> 
             </div>
@@ -114,7 +205,7 @@
             <path class="st0" d="M228.649,174.606c27.113-54.57,3.489-120.595-48.607-144.013C129.178,7.728,68.497,32.522,44.388,81.884  c-24.441,50.042-5.511,113.729,44.214,139.386c77.956,39.643,130.727-27.393,131.525-31.152"/><path class="st0" d="M142.285,134.396c4.54-3.892,11.745-8.286,11.313-10.665c-0.432-2.378-4.904-7.198-13.042-7.712  c-0.961-0.061-15.523-0.691-22.198,9.945c-5.438,8.665-3.031,18.573,2.378,25.366c6.589,8.274,19.269,10.46,29.403,4.898  c18.701-13.08,8.253-26.589,9.442-29.615c9.296-14.702,37.328-11.242,39.49-12.756c2.162-1.513,3.892-16.107,2.378-18.809  s-29.591-24.071-66.082-22.701C104.651,73.5,81.21,90.832,78.939,93.967c-2.27,3.135-3.892,20.755-1.73,22.052  s29.295,1.405,31.349-0.216c2.054-1.621-2.702-16.972-0.865-20.107c1.838-3.135,15.898-6.736,29.187-7.135  c15.377-0.462,31.457,4.324,33.079,6.918c1.622,2.594-1.73,14.053-1.081,16.431c0.649,2.378,20.826,32.322,20.178,46.483  c-0.649,14.161-5.73,19.566-7.567,20.323c-1.837,0.757-85.756,1.189-87.918-0.432c-2.162-1.622-5.189-13.513-4.757-23.133  s7.253-24.573,10.952-31.565"/>
           </svg>
           </a>
-          <a href="mailto:mishniki@yandex.ru" class="header__mail">
+          <a href="mailto:kover.ray@yandex.ru" class="header__mail">
             <svg height="64px" width="64px" style="enable-background:new 0 0 256 256;" version="1.1" viewbox="0 0 256 256" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <style type="text/css">
                 .st0{fill:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -127,89 +218,181 @@
     </header>
     <main>
       <div class="container">
-        <div class="carpets__title">
-          <h1 class="carpets__title-text">Современные ковры</h1>
-        </div>
         <section class="product">
+          <div class="carpets__title">
+            <h1 class="carpets__title-text">Современные ковры</h1>
+          </div>
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="js-choice">
+                  <img class="product__item-img" src="img/modern/deco10128multi.png" alt="Турция" data-path="img-1">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">10128</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Мульти</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="js-choice">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-1">
+                <img class="modal modal__img" src="img/modern/deco10128multi.png" alt="Турция" data-target="img-1">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/deco10128ny-gy.png" alt="Турция" data-path="img-2">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">10128</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Морской/Серый</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-2">
+                <img class="modal modal__img" src="img/modern/deco10128ny-gy.png" alt="Турция" data-target="img-2">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/deco10132sn.png" alt="Турция" data-path="img-3">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">10132</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Самон</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-3">
+                <img class="modal modal__img" src="img/modern/deco10132sn.png" alt="Турция" data-target="img-3">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/deco10132sno.png" alt="Турция" data-path="img-4">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">10132</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Самон</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-4">
+                <img class="modal modal__img" src="img/modern/deco10132sno.png" alt="Турция" data-target="img-4">
               </div>
             </div>
           </div>
@@ -217,81 +400,173 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/deco10132ny-gy.png" alt="Турция" data-path="img-5">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">10132</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Морской/Серый</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-5">
+                <img class="modal modal__img" src="img/modern/deco10132ny-gy.png" alt="Турция" data-target="img-5">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/deco10133sn.png" alt="Турция" data-path="img-6">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">10133</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Самон</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-6">
+                <img class="modal modal__img" src="img/modern/deco10133sn.png" alt="Турция" data-target="img-6">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/deco13536gy.png" alt="Турция" data-path="img-7">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">13536</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Серый</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-7">
+                <img class="modal modal__img" src="img/modern/deco13536gy.png" alt="Турция" data-target="img-7">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/deco23092ny-gy.png" alt="Турция" data-path="img-8">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">DECO</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">23092</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Морской/Серый</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="1.6x4">1.6м x 4м - 16 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="2.4x4">2.4м x 4м - 24 000₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
+                      <option value="3x5">3м x 5м - 37 500₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-8">
+                <img class="modal modal__img" src="img/modern/deco23092ny-gy.png" alt="Турция" data-target="img-8">
               </div>
             </div>
           </div>
@@ -299,81 +574,129 @@
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/velvet10166vi-bj.png" alt="Турция" data-path="img-9">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">VELVET</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">10166</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Визион/Бежевый</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 500₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 6 300₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 10 700₽</option>
+                      <option value="1.6x3">1.6м x 3м - 13 920₽</option>
+                      <option value="1.6x4">1.6м x 4м - 18 600₽</option>
+                      <option value="2x3">2м x 3м - 17 400₽</option>
+                      <option value="2x4">2м x 4м - 23 200₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 23 700₽</option>
+                      <option value="2.4x4">2.4м x 4м - 27 900₽</option>
+                      <option value="3x4">3м x 4м - 34 800₽</option>
+                      <option value="3x5">3м x 5м - 43 500₽</option>
+                      <option value="4x5">4м x 5м - 58 000₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-9">
+                <img class="modal modal__img" src="img/modern/velvet10166vi-bj.png" alt="Турция" data-target="img-9">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/velvet25069bgo.png" alt="Турция" data-path="img-10">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">VELVET</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">25069</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Бежевый</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 500₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 6 300₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 10 700₽</option>
+                      <option value="1.6x3">1.6м x 3м - 13 920₽</option>
+                      <option value="1.6x4">1.6м x 4м - 18 600₽</option>
+                      <option value="2x3">2м x 3м - 17 400₽</option>
+                      <option value="2x4">2м x 4м - 23 200₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 23 700₽</option>
+                      <option value="2.4x4">2.4м x 4м - 27 900₽</option>
+                      <option value="3x4">3м x 4м - 34 800₽</option>
+                      <option value="3x5">3м x 5м - 43 500₽</option>
+                      <option value="4x5">4м x 5м - 58 000₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
+              </div>
+              <div class="modal__overlay" data-target="img-10">
+                <img class="modal modal__img" src="img/modern/velvet25069bgo.png" alt="Турция" data-target="img-10">
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
               <div class="product__items">
                 <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
+                  <img class="product__item-img" src="img/modern/winston03963cr-bg.png" alt="Турция" data-path="img-11">
+                  <div class="product__item__dscr">
+                    <p class="product__title">Коллекция</p>
+                    <p class="product__text">Winston</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Дизайн</p>
+                    <p class="product__text">03963</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Цвет</p>
+                    <p class="product__text">Крем/Бежевый</p> 
+                  </div>
+                  <div class="product__item__dscr">
+                    <p class="product__title">Производитель</p>
+                    <p class="product__text">Турция</p> 
+                  </div>
+                  <form action="#" class="product__select select">
+                    <select name="price" class="multi-select">
                       <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
+                      <option value="0.8x1.5">0.8м x 1.5м - 3 000₽</option>
+                      <option value="1.2x1.8">1.2м x 1.8м - 5 400₽</option>
+                      <option value="1.6x2.3">1.6м x 2.3м - 9 200₽</option>
+                      <option value="1.6x3">1.6м x 3м - 12 000₽</option>
+                      <option value="2x3">2м x 3м - 15 000₽</option>
+                      <option value="2x4">2м x 4м - 20 000₽</option>
+                      <option value="2.4x3.4">2.4м x 3.4м - 20 400₽</option>
+                      <option value="3x4">3м x 4м - 30 000₽</option>
                     </select>
                   </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
+                  <button class="btn-reset btn product__btn" data-path="modal">Сделать заказ</button>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="product__items">
-                <div class="product__item">
-                  <img src="img/product-1.jpg" alt="Ковёр" class="product__item-img">
-                  <p class="product__title">Шэгги-Мэгги</p>
-                  <form action="" class="product__select select">
-                    <select name="Размеры - цены" id="select" class="multi-select">
-                      <option value="">Размеры / Цены</option>
-                      <option value="1,5x2">1,5м x 2м - 1 000 000₽</option>
-                      <option value="1,5x3">1,5м x 3м - 1 500 000₽</option>
-                      <option value="2x3">2м x 3м - 2 000 000₽</option>
-                      <option value="2x4">2м x 4м - 2 500 000₽</option>
-                    </select>
-                  </form>
-                  <button class="btn-reset btn product__btn">
-                    <a href="mailto:mishniki@yandex.ru">Сделать заказ</a>
-                  </button>
-                </div>
+              <div class="modal__overlay" data-target="img-11">
+                <img class="modal modal__img" src="img/modern/winston03963cr-bg.png" alt="Турция" data-target="img-11">
               </div>
             </div>
           </div>
@@ -415,8 +738,22 @@
         </div>
       </div>
     </footer>
+    <div class="modals__form-success">
+      <div class="modal__form-success" data-target="modal__form-success">
+        <div class="modal__content">
+          <svg class="modul__img" fill="#7C1C26" xmlns="http://www.w3.org/2000/svg" height="150" viewBox="0 0 24 24">
+            <path d="M12,22 C6.4771525,22 2,17.5228475 2,12 C2,6.4771525 6.4771525,2 12,2 C17.5228475,2 22,6.4771525 22,12 C22,17.5228475 17.5228475,22 12,22 Z M12,21 C16.9705627,21 21,16.9705627 21,12 C21,7.02943725 16.9705627,3 12,3 C7.02943725,3 3,7.02943725 3,12 C3,16.9705627 7.02943725,21 12,21 Z M15.1464466,9.14644661 C15.3417088,8.95118446 15.6582912,8.95118446 15.8535534,9.14644661 C16.0488155,9.34170876 16.0488155,9.65829124 15.8535534,9.85355339 L10.8535534,14.8535534 C10.6582912,15.0488155 10.3417088,15.0488155 10.1464466,14.8535534 L8.14644661,12.8535534 C7.95118446,12.6582912 7.95118446,12.3417088 8.14644661,12.1464466 C8.34170876,11.9511845 8.65829124,11.9511845 8.85355339,12.1464466 L10.5,13.7928932 L15.1464466,9.14644661 Z"/>
+          </svg>                    
+          <h1 class="modal__title">Ваша заявка отправлена!</h1>
+          <p class="text modal__text">Скоро с Вами свяжется наш менедежр для уточнения заказа</p>
+          <button class="btn-reset btn btn__form-success">Отлично!</button>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="Choices-master/public/assets/scripts/choices.min.js"></script>
+  <script src="Inputmask-5.x/dist/inputmask.min.js"></script>
+  <script src="Just-validate-1/dist/js/just-validate.min.js"></script>
   <script src="script-product.js"></script>
 </body>
 </html>

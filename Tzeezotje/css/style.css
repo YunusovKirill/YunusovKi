@@ -247,11 +247,6 @@ body {
   border-radius: 20px;
 }
 
-.modal-visible {
-  display: flex;
-  visibility: visible;
-}
-
 .modal__content {
   background-image: url(../img/check.svg);
   background-repeat: no-repeat;
