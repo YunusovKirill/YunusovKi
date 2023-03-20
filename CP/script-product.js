@@ -88,6 +88,8 @@ modalSuccess.addEventListener('click', () => {
   modalSuccess.classList.remove('modal-visible')
 })
 
+
+
 new JustValidate('.form', {
   rules: {
     name: {
@@ -173,10 +175,24 @@ new JustValidate('.form', {
   submitHandler: function(thisForm) {
     let formData = new FormData(thisForm);
     let xhr = new XMLHttpRequest();
-  
+    
+    
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
+          const hiddenModalForm = () => {
+            modalsForm.classList.remove('modals-visible');
+            modalForm.forEach((el) => {
+              el.classList.remove('modal-visible');
+            });
+          }
+          
+          modalsForm.addEventListener('click', (e) => {
+            if (e.target == modalsForm) {
+                hiddenModalForm()
+            }
+          });
+          
           hiddenModalForm()
           modalSuccess.classList.add('modal-visible')
         }
