@@ -180,6 +180,7 @@ new JustValidate('.form', {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
+          
           const hiddenModalForm = () => {
             modalsForm.classList.remove('modals-visible');
             modalForm.forEach((el) => {
@@ -192,7 +193,7 @@ new JustValidate('.form', {
                 hiddenModalForm()
             }
           });
-          
+
           hiddenModalForm()
           modalSuccess.classList.add('modal-visible')
         }
