@@ -768,4 +768,25 @@
   .product__btn {
     font-size: 22px;
   }
+
+  /* СLEAN */
+
+  .clean {
+    top: 0;
+    right: 50%;                       
+    transform: translate(50%, 20%);
+  }
+
+  .clean__img {
+    width: 150px;
+  }
+    
+  .clean__title {
+    font-size: 20px;
+  }
+  
+  .clean__text {
+    line-height: 150%;
+    font-size: 14px;
+  }
 } 
