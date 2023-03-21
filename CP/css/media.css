@@ -771,12 +771,6 @@
 
   /* СLEAN */
 
-  .clean {
-    top: 0;
-    right: 50%;                       
-    transform: translate(50%, 20%);
-  }
-
   .clean__img {
     width: 150px;
   }
