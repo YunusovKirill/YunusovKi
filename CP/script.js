@@ -69,7 +69,7 @@ type="text/javascript">
         '<div>Воскресенье: с 10:00 до 19:00</div>', 
     }, {
       iconLayout: 'default#image',
-      iconImageHref: 'img/location.png',
+      iconImageHref: 'img/location.webp',
       iconImageSize: [80, 80],
       iconOffset: [-25, -45],
       });
@@ -91,7 +91,7 @@ type="text/javascript">
         '<div>Воскресенье: с 10:00 до 19:00</div>', 
     }, {
       iconLayout: 'default#image',
-      iconImageHref: 'img/location.png',
+      iconImageHref: 'img/location.webp',
       iconImageSize: [80, 80],
       iconOffset: [-25, -45],
       });
@@ -113,7 +113,7 @@ type="text/javascript">
         '<div>Воскресенье: с 10:00 до 19:00</div>', 
     }, {
       iconLayout: 'default#image',
-      iconImageHref: 'img/location.png',
+      iconImageHref: 'img/location.webp',
       iconImageSize: [80, 80],
       iconOffset: [-25, -45],
       });
@@ -135,7 +135,7 @@ type="text/javascript">
         '<div>Воскресенье: с 10:00 до 18:00</div>', 
     }, {
       iconLayout: 'default#image',
-      iconImageHref: 'img/location.png',
+      iconImageHref: 'img/location.webp',
       iconImageSize: [80, 80],
       iconOffset: [-25, -45],
       });

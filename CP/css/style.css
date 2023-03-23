@@ -154,7 +154,7 @@ h2 {
 .ornament-left {
   width: 600px;
   min-height: 100px;
-  background-image: url(../img/ornament.png);
+  background-image: url(../img/ornament.webp);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -163,7 +163,7 @@ h2 {
 .ornament-right {
   width: 600px;
   min-height: 100px;
-  background-image: url(../img/ornament.png);
+  background-image: url(../img/ornament.webp);
   background-repeat: no-repeat;
   background-position: right;
   background-size: contain;
@@ -376,13 +376,13 @@ h2 {
 }
 
 .header__info__item-1 {
-  background-image: url(../img/delivery.jpg);
+  background-image: url(../img/delivery.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .header__info__item-2 {
-  background-image: url(../img/header-info-2.jpg);
+  background-image: url(../img/clean.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -619,6 +619,11 @@ h2 {
   color: #7C1C26;
 }
 
+.news__card-img {
+  display: flex;
+  justify-content: center;
+}
+
 .news__card-img img {
   width: 100%;
   max-height: 600px;
@@ -757,7 +762,7 @@ h2 {
   min-height: 400px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/catalog_modern.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/catalog_modern.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--brend-color);
@@ -770,7 +775,7 @@ h2 {
   min-height: 400px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/catalog_traditional.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 65.7%), url("../img/catalog_traditional.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: var(--brend-color);
@@ -789,7 +794,7 @@ h2 {
   min-height: 540px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("../img/catalog_all.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("../img/catalog_all.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -802,7 +807,7 @@ h2 {
   min-height: 540px;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("../img/catalog_clean.jpg");
+  background-image: linear-gradient(90deg, rgba(48, 64, 89, 0.84) -2.9%, rgba(53, 65, 83, 0) 85.7%), url("../img/catalog_clean.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -887,6 +892,10 @@ h2 {
   min-height: 580px;
 }
 
+.map {
+  min-height: 100%;
+}
+
 [class*="balloon__layout"] {
   border: 2px solid var(--brend-color);
   border-radius: 20px;
@@ -910,7 +919,7 @@ h2 {
 /* Footer */
 
 .footer {
-  background-image: url(../img/footer.jpg);
+  background-image: url(../img/footer.webp);
   background-repeat: no-repeat;
   background-size: cover;
   border-top-left-radius: 20px;
@@ -986,7 +995,7 @@ h2 {
   margin-bottom: 50px;
   padding: 20px 0;
   text-align: center;
-  background-image: url(../img/carpets-title.jpg);
+  background-image: url(../img/carpets-title.webp);
   color: var(--titletext-color);
   border-radius: 20px;
 }
@@ -1033,42 +1042,42 @@ h2 {
 }
 
 .carpets__tradition {
-  background-image: url(../img/tradition.jpg);
+  background-image: url(../img/tradition.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .carpets__modern {
-  background-image: url(../img/modern.jpg);
+  background-image: url(../img/modern.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .carpets__kids {
-  background-image: url(../img/kids.jpg);
+  background-image: url(../img/kids.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .carpets__fluffy {
-  background-image: url(../img/fluffy.jpg);
+  background-image: url(../img/fluffy.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .carpets__path {
-  background-image: url(../img/path.jpeg);
+  background-image: url(../img/path.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .carpets__grass {
-  background-image: url(../img/grass.jpg);
+  background-image: url(../img/grass.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1159,7 +1168,7 @@ ol {
 }
 
 .clean__img {
-  width: 300px;
+  max-width: 200px;
   animation-name: rotation;
   animation-duration: 5s;
   animation-iteration-count: infinite;

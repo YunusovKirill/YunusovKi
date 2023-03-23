@@ -182,6 +182,12 @@
   .product__btn {
     font-size: 20px;
   }
+
+  /* MAP */
+
+  .map {
+    min-height: 627px;
+  }
 }
 
 @media (max-width: 991px) {
