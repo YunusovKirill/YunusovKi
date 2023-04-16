@@ -249,3 +249,21 @@ closeForm.addEventListener('click', function() {
 btnFormSuccess.addEventListener('click', function() {
   modalSuccess.classList.remove('modal-visible')
 });
+
+// ----------------------------------------- Observer -----------------------------------------
+
+const imageObserver = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.src = entry.target.dataset.src;
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    rootMargin: "50px 0px 0px"
+  }
+);
+
+document.querySelectorAll("img").forEach((image) => imageObserver.observe(image));
