@@ -193,6 +193,10 @@ select {
   transition: all .3s ease-in-out;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .modal__form {
   display: none;
   margin: auto;

@@ -68,11 +68,14 @@ img.forEach((el) => {
     })
 
 		document.querySelector(`[data-target="${pathImg}"]`).classList.add('modal-visible');
+
+    body.classList.add('overflow-hidden')
 	});
 });
 
 modalOverlay.forEach((overlay) => {
   overlay.addEventListener('click', (e) => {
+    body.classList.remove('overflow-hidden')
     overlay.classList.remove('modal__overlay-visible');
     modals.forEach((el) => {
       el.classList.remove('modal-visible');
@@ -214,6 +217,7 @@ im.mask(selector);
 
 // Modal
 
+const body = document.querySelector('body')
 const btnModal = document.querySelectorAll('.product__btn');
 const modalsForm = document.querySelector('.modals__form');
 const modalForm = document.querySelectorAll('.modal__form');
@@ -230,11 +234,14 @@ btnModal.forEach((el) => {
 
 		document.querySelector(`[data-target="${path}"]`).classList.add('modal-visible');
 		modalsForm.classList.add('modals-visible');
+
+    body.classList.add('overflow-hidden')
 	});
 });
 
 modalsForm.addEventListener('click', (e) => {
 	if (e.target == modalsForm) {
+    body.classList.remove('overflow-hidden');
 		modalsForm.classList.remove('modals-visible');
 		modalForm.forEach((el) => {
 			el.classList.remove('modal-visible');
@@ -243,6 +250,7 @@ modalsForm.addEventListener('click', (e) => {
 });
 
 closeForm.addEventListener('click', function() {
+  body.classList.remove('overflow-hidden');
   modalsForm.classList.remove('modals-visible');
 });
 
