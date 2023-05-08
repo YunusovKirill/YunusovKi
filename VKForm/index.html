@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="Choices-master/public/assets/styles/choices.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo.png" type="image/png">
+  <title>KV встречи</title>
+</head>
+<body>
+  <div class="header">
+    <picture class="header__logo">
+      <img src="img/favicon.webp" alt="Логотип">
+    </picture>
+  </div>
+  <div class="container">
+    <div class="content">
+      <form action="#" class="form" method="POST">
+        <h2 class="title">Бронирование переговорной</h2>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Выберите башню для переговоров</legend>
+          <select name="tower" class="js-choice" data-validate-field="tower">
+            <option value="">Башни</option>
+            <option value="А">А</option>
+            <option value="Б">Б</option>
+          </select>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Выберите этаж в башне</legend>
+          <select name="floor" class="multi-select" data-validate-field="floor">
+            <option value="">Этаж</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+          </select>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Выберите номер переговорной</legend>
+          <select name="number" class="multi-select" data-validate-field="number">
+            <option value="">Переговорная</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Выберите дату и время встречи</legend>
+          <input class="form__datetime" type="datetime-local" id="datetime" name="datetime" min="2023-05-06T00:00" max="2024-05-06T00:00" data-validate-field="datetime">
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Комментарии к заказу</legend>
+          <label class="form__label">
+            <textarea class="form__textarea" name="Комментарии" placeholder="Напишите ваши особые пожелания"></textarea>
+          </label>  
+        </fieldset>
+        <button class="btn">Отправить</button>
+        <button type="reset" class="btn btn__reset">Очистить</button>
+        <p class="form__privacy">Нажимая кнопку "Отправить", я подтверждаю, что ознакомлен и согласен с условиями <a href="https://vk.com/privacy?ysclid=lhc41wex5d568121069" class="form__privacy__link">политики конфиденциальности</a></p>  
+      </form>
+    </div>
+    <div class="content-img">
+      <h1 class="title">Бронирование переговорных комнат</h1>
+      <h2 class="text">Успейте арендовать самую подходящую переговорную комнату для вас!</h2>
+      <picture>
+        <img src="img/meet.webp" class="img" alt="Фото встречи">
+      </picture>
+    </div>
+  </div>
+<!-- <script src="Choices-master/public/assets/scripts/choices.min.js"></script> -->
+<script src="Just-validate-1/dist/js/just-validate.min.js"></script>
+<script src="script.js"></script>    
+</body>
+</html>

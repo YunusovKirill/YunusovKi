@@ -36,6 +36,19 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+// Pop-up
+
+let popUp = document.querySelector('.pop__up');
+let popUpBtn = document.querySelector('.pop__up__btn');
+
+setTimeout(function(){ 
+    popUp.classList.add('pop__up-visible')
+}, 2000);
+
+popUpBtn.addEventListener('click', function(){
+  popUp.classList.remove('pop__up-visible')
+})
+
 // Map
 
 type="text/javascript">
@@ -87,7 +100,7 @@ type="text/javascript">
       balloonContentHeader: 'СЦ "Азбука Ремонта"',
       balloonContentBody: 
         '<div class="balloon__title">График работы</div>' +
-        '<div>Понедельник-суббота: с 10:00 до 20:00</div>' + 
+        '<div>Понедельник-суббота: с 09:00 до 20:00</div>' + 
         '<div>Воскресенье: с 10:00 до 19:00</div>', 
     }, {
       iconLayout: 'default#image',
@@ -109,8 +122,8 @@ type="text/javascript">
       balloonContentHeader: 'СГ "Хозяйственная база"',
       balloonContentBody: 
         '<div class="balloon__title">График работы</div>' +
-        '<div>Понедельник-суббота: с 10:00 до 20:00</div>' + 
-        '<div>Воскресенье: с 10:00 до 19:00</div>', 
+        '<div>Понедельник-суббота: с 09:00 до 20:00</div>' + 
+        '<div>Воскресенье: с 09:00 до 18:00</div>', 
     }, {
       iconLayout: 'default#image',
       iconImageHref: 'img/location.webp',
@@ -131,8 +144,8 @@ type="text/javascript">
       balloonContentHeader: 'СГ "Гвоздь"',
       balloonContentBody: 
         '<div class="balloon__title">График работы</div>' +
-        '<div>Понедельник-суббота: с 10:00 до 20:00</div>' + 
-        '<div>Воскресенье: с 10:00 до 18:00</div>', 
+        '<div>Понедельник-суббота: с 09:00 до 20:00</div>' + 
+        '<div>Воскресенье: с 09:00 до 19:00</div>', 
     }, {
       iconLayout: 'default#image',
       iconImageHref: 'img/location.webp',

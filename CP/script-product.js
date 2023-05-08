@@ -91,8 +91,6 @@ modalSuccess.addEventListener('click', () => {
   modalSuccess.classList.remove('modal-visible')
 })
 
-
-
 new JustValidate('.form', {
   rules: {
     name: {

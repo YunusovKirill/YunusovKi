@@ -71,6 +71,11 @@
     margin-bottom: 20px;
   }
 
+  .contacts__item-right {
+    text-align: start;
+  }
+  
+
   /* CARPETS */
 
   .carpets__link {
@@ -88,6 +93,12 @@
 }
 
 @media (max-width: 1170px) {
+
+  /* Global */
+
+  .pop__up {
+    max-width: 550px;
+  }
 
   /* Header */
 
@@ -165,6 +176,11 @@
     flex: 0 0 100%;
     max-width: 100%;
   }
+
+  .contacts__item-right {
+    text-align: right;
+  }
+  
 
   /* Product */
   .product__title {
@@ -371,6 +387,18 @@
 }
 
 @media (max-width: 767px) {
+
+  /* Global */
+
+  .pop__up {
+    flex-direction: column;
+    max-width: 390px;
+  }
+
+  .pop__up__text {
+    text-align: center;
+    margin: 0 0 20px 0;
+  }
 
   /* News */
 
@@ -596,6 +624,11 @@
     margin-bottom: 20px;
   }
 
+  .contacts__item-right {
+    text-align: start;
+  }
+  
+
   /* Footer */
 
   .footer__container {
@@ -666,6 +699,11 @@
   h1 {
     font-size: 28px;
   }
+
+  .pop__up {
+    max-width: 250px;
+  }
+
 
   /* Header */
 
