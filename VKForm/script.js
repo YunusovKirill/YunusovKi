@@ -31,54 +31,18 @@ new JustValidate('.form', {
     },
   },
 
-  // submitHandler:
-  
-  //   function (thisForm) {
+  submitHandler:
 
-  //     return new FormData(thisForm);
+    function (thisForm) {
 
-  //     console.log(JSON.parse(thisForm));
-  //   }
+      const formData = new FormData(thisForm);
 
-  // submitHandler: document.addEventListener('DOMContentLoaded', function () {
-  //   const form = document.querySelector('.form');
-  //   form.addEventListener('submit', formSend);
-
-  //   async function formSend(e) {
-  //     e.preventDefault();
-
-  //     let formData = new FormData(form);
-
-  //     let response = await fetch('index.html', {
-  //       methid: 'POST',
-  //       body: formData
-  //     });
-  //     if (response.ok) {
-  //       let result = await response.json();
-  //       console.log(JSON.parse(formData));
-  //       form.reset();
-  //     } else {
-  //       alert("Ошибка!")
-  //     }
-  //   }
-  // })
-  
-  // submitHandler: function(thisForm) {
-  //   let formData = new FormData(thisForm);
-  //   let xhr = new XMLHttpRequest();
-    
-    
-  //   xhr.onreadystatechange = function () {
-  //     if (xhr.readyState === 4) {
-  //       if (xhr.status === 200) {
-  //         console.log(JSON.parse(formData));
-  //       }
-  //     }
-  //   }
-  
-  //   xhr.send(formData);
-  
-  //   thisForm.reset();
-  // }
+      thisForm.reset();
+      
+      for (const pair of formData.entries()) {
+        console.log(JSON.stringify(pair[0]+ ' - ' + pair[1]));
+      }
+      return formData;
+    },
 });
 
