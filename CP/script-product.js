@@ -253,7 +253,8 @@ closeForm.addEventListener('click', function() {
 });
 
 btnFormSuccess.addEventListener('click', function() {
-  modalSuccess.classList.remove('modal-visible')
+  modalSuccess.classList.remove('modal-visible');
+  body.classList.remove('overflow-hidden');
 });
 
 // ----------------------------------------- Observer -----------------------------------------
