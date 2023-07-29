@@ -239,7 +239,7 @@ body {
 }
 
 .modal-2 {
-  display: none;
+  display: flex;
   max-width: 900px;
   min-height: 500px;
   align-items: center;

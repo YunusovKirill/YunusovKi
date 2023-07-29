@@ -26,6 +26,12 @@ let swiper2 = new Swiper(slider2, {
 
 // Validation
 
+// Modal SUCCESS
+const modalSuccess = document.querySelector('.modals-2');
+modalSuccess.addEventListener('click', () => {
+  modalSuccess.classList.remove('modals-visible')
+})
+
 new JustValidate('.form', {
   rules: {
     name: {
@@ -69,7 +75,21 @@ new JustValidate('.form', {
     xhr.onreadystatechange = function () {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
-          console.log('Отправлено');
+          const hiddenModalForm = () => {
+            modals.classList.remove('modals-visible');
+            modal.forEach((el) => {
+              el.classList.remove('modal-visible');
+            });
+          }
+          
+          modals.addEventListener('click', (e) => {
+            if (e.target == modals) {
+                hiddenModalForm()
+            }
+          });
+
+          hiddenModalForm()
+          modalSuccess.classList.add('modals-visible')
         }
       }
     }
