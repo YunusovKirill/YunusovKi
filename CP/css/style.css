@@ -651,6 +651,11 @@ h2 {
   color: #7C1C26;
 }
 
+.news__card__content__text__link {
+  font-weight: 700;
+  color: var(--brend-color);
+}
+
 .news__card-img {
   display: flex;
   justify-content: center;
