@@ -1118,8 +1118,8 @@ h2 {
   background-position: center;
 }
 
-.carpets__grass {
-  background-image: url(../img/grass.webp);
+.carpets__dirt {
+  background-image: url(../img/dirt.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
